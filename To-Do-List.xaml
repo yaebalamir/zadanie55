@@ -1,0 +1,23 @@
+﻿<Window x:Class="zadanie5.To_Do_List"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadanie5"
+        mc:Ignorable="d"
+        Title="To_Do_List" Height="450" Width="800">
+    <Grid Background="#FF66AF96">
+        <ListBox x:Name="DisplayListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,10,217" FontSize="16"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Height="29" Width="248" Background="#FFC9ECE6" Click="Button_Click"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="326,240,0,0" VerticalAlignment="Top" Height="29" Width="188" Background="#FFECC9C9" Click="Button_Click_1"/>
+        <Button Content="Пометить выполненным" HorizontalAlignment="Left" Margin="566,240,0,0" VerticalAlignment="Top" Height="29" Width="172" Background="#FFC9ECE6" Click="Button_Click_2"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="textBoxTitle" HorizontalAlignment="Left" Margin="95,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <Label Content="Описание:" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="textBoxDesc"  HorizontalAlignment="Left" Margin="95,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" UndoLimit="500" Height="95"/>
+        <Button Content="Показать невыполненные задачи" HorizontalAlignment="Left" Margin="558,360,0,0" VerticalAlignment="Top" Height="29" Width="208" Click="Button_Click_4"/>
+        <Button Content="Показать выполненные задачи" HorizontalAlignment="Left" Margin="558,312,0,0" VerticalAlignment="Top" Height="32" Width="208" Click="Button_Click_3"/>
+        <Button Content="Показать все задачи" HorizontalAlignment="Left" Margin="326,360,0,0" VerticalAlignment="Top" Height="29" Width="188" Click="Button_Click_5"/>
+
+    </Grid>
+</Window>
